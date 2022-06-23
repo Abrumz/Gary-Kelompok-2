@@ -14,6 +14,8 @@ public class GameOver : MonoBehaviour
         if(Time.timeScale == 0)
         {
             gameOverPanel.SetActive(true);
+            FindObjectOfType<SoundEffects>().DeathSound();
+            FindObjectOfType<SoundEffects>();
         }
     }
 
