@@ -11,7 +11,7 @@ public class GameOver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameObject.FindGameObjectWithTag("Player") == null)
+        if(Time.timeScale == 0)
         {
             gameOverPanel.SetActive(true);
         }
@@ -19,6 +19,7 @@ public class GameOver : MonoBehaviour
 
     public void Restart()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

@@ -14,10 +14,10 @@ public class PlayerMovement : MonoBehaviour
     public Text ScoreText;
 
     float horizontalMove = 0f;
+    
+    [SerializeField]
     bool jump = false;
     bool crouch = false;
-
-    [SerializeField]
     bool isGrounded = false;
     bool isAlive = true;
 
